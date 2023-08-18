@@ -12,4 +12,6 @@ scikit-learn = 1.2.2
 
 numpy = 1.24.2
 ## Usage
+The data is located in dataset.rar
+
 main.py
