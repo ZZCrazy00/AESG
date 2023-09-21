@@ -1,5 +1,5 @@
-# AESG
-Feature extraction and enhancement based on deep autoencoder and subgraphs to predicting microbe resistance
+# JDASA-MDR
+Joint Deep Autoencoder and Subgraph Augmentation for Inferring Microbial Reactions to Drugs
 
 ## Main requirements
 python = 3.9
