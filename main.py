@@ -1,7 +1,7 @@
 import torch
 import argparse
 import matplotlib.pyplot as plt
-from model import AESG
+from model import JDASA
 from utile import set_seed, get_data, get_loaders, train_func
 import warnings
 warnings.filterwarnings("ignore", category=UserWarning)
@@ -27,7 +27,7 @@ set_seed(args.seed)
 dataset, splits = get_data(args)
 train_loader, test_loader = get_loaders(args, splits)
 
-model = AESG(args, dataset.num_features).cuda()
+model = JDASA(args, dataset.num_features).cuda()
 optimizer = torch.optim.Adam(params=model.parameters(), lr=0.001, weight_decay=5e-4)
 loss_fn = torch.nn.BCEWithLogitsLoss()
 
