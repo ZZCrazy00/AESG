@@ -76,7 +76,7 @@ def DeepAE2(x_train, args):
     return encoder_output, torch.Tensor(encoded_imgs)
 
 
-class AESG(torch.nn.Module):
+class JDASA(torch.nn.Module):
     def __init__(self, args, num_features):
         super(AESG, self).__init__()
         self.subgraph_lin = torch.nn.Linear(args.hops*(args.hops+2), args.s_dim)
